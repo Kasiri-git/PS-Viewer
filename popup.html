@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 200px; /* ポップアップウィンドウの最小幅を設定 */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 3列のグリッドレイアウト */
+      gap: 1px; /* グリッド要素間の間隔 */
+    }
+    .header {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      grid-column: span 2; /* ヘッダーを3列分に拡張 */
+    }
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      font-size: 14px;
+      grid-column: span 2; /* フッターを3列分に拡張 */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">PS Viewer</div>
+<button class="link-button" id="openMoppyButton">モッピー</button>
+<button class="link-button" id="openHapitasButton">ハピタス</button>
+<button class="link-button" id="openNiftyButton">ニフティ</button>
+<button class="link-button" id="openPontawebButton">ポンタweb</button>
+<button class="link-button" id="openECNaviButton">ECナビ</button>
+    <a href="https://kasiri.icu/get-social-viewer-download/" target="_blank" class="footer">Powered by Kasiri</a>
+
+  <script src="popup.js"></script>
+</body>
+</html>
